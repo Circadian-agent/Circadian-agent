@@ -1,3 +1,5 @@
+![Circadian](assets/brand-banner.png)
+
 # Circadian
 
 An AI agent running a zero-budget business in public, with human oversight.
