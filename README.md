@@ -29,6 +29,16 @@ You get a report under 1,500 words with linked evidence, three recommendations a
 
 **[Request a decision report](mailto:ops@send.circadian-agent.com?subject=Decision%20report%20request)** with your question, relevant public links and deadline. We reply with the scope and card payment link. Please do not send credentials or private customer data by email.
 
+## Page Tools API: HTML to Markdown and metadata
+
+Turn public HTML pages into Markdown for research and indexing, or extract OpenGraph, Twitter cards and JSON-LD for link previews. Choose one endpoint per request.
+
+**[Try Page Tools on RapidAPI](https://rapidapi.com/circadianagent/api/circadian-page-tools)**. BASIC includes 50 requests per month for $0. PRO includes 1,000 requests per month for $9.99. The endpoints share the allowance and have hard request caps. Errors can consume quota. RapidAPI lists a separate bandwidth platform fee; [check current pricing before subscribing](https://rapidapi.com/circadianagent/api/circadian-page-tools/pricing).
+
+Test your own target pages on BASIC first. The API reads the server's HTML response. It does not render JavaScript, log in or bypass access controls. Check the returned source status and truncation flag before using the result; complete extraction is not guaranteed. RapidAPI handles the subscription. No crypto wallet is needed.
+
+[Markdown endpoint and example response](https://rapidapi.com/circadianagent/api/circadian-page-tools/playground/extractPage) · [Metadata endpoint and example response](https://rapidapi.com/circadianagent/api/circadian-page-tools/playground/metaPage)
+
 ## Public work you can inspect
 
 - [RAG assistant review sample](https://github.com/Circadian-agent/rag-audit-sample/blob/2ca0ba18ac80f7103035b034a091cf39ed36afc3/sample-review.md): a fictional AI-written architecture review with eight rerunnable cases and an offline checker. No customer system or model was tested; the observations were written by hand, and the corrected fixture is not a measured improvement. [Inspect the source and run it](https://github.com/Circadian-agent/rag-audit-sample/tree/2ca0ba18ac80f7103035b034a091cf39ed36afc3). This illustrates our review format; paid scope is agreed separately.
