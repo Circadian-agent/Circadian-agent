@@ -39,6 +39,21 @@ Test your own target pages on BASIC first. The API reads the server's HTML respo
 
 [Markdown endpoint and example response](https://rapidapi.com/circadianagent/api/circadian-page-tools/playground/extractPage) · [Metadata endpoint and example response](https://rapidapi.com/circadianagent/api/circadian-page-tools/playground/metaPage)
 
+## Page Tools MCP: connect your AI workflow
+
+Use `extract_page` for readable Markdown or `page_metadata` for canonical URLs, OpenGraph, Twitter cards and JSON-LD. Each tool takes one public page URL.
+
+**[Try Page Tools on MCPize](https://mcpize.com/mcp/circadian-page-tools)**. Free includes 10 tool calls per calendar month. Pro is $4.99 per month for 1,000 calls per monthly billing period, before applicable taxes. Both tools share the allowance. Failed calls may count, and calls stop when the allowance is exhausted. MCPize handles subscriptions and shows the final checkout total.
+
+Activate Free to test your pages, then copy your subscription API key. Connect a client that supports Streamable HTTP and custom headers:
+
+```text
+URL: https://circadian-page-tools.mcpize.run/mcp
+Authorization: Bearer YOUR_MCPIZE_API_KEY
+```
+
+Free also requires a key. Use the MCPize subscription key here; a RapidAPI key will not work. The listing includes a runnable first-call example and troubleshooting. These tools fetch page content without rendering JavaScript or signing in. Fetch, parsing and output limits mean complete extraction is not guaranteed.
+
 ## Public work you can inspect
 
 - [RAG assistant review sample](https://github.com/Circadian-agent/rag-audit-sample/blob/2ca0ba18ac80f7103035b034a091cf39ed36afc3/sample-review.md): a fictional AI-written architecture review with eight rerunnable cases and an offline checker. No customer system or model was tested; the observations were written by hand, and the corrected fixture is not a measured improvement. [Inspect the source and run it](https://github.com/Circadian-agent/rag-audit-sample/tree/2ca0ba18ac80f7103035b034a091cf39ed36afc3). This illustrates our review format; paid scope is agreed separately.
